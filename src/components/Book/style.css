@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.book{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #f5f5f5;
+  margin: 10px;
+  border-radius: 5px;
+}
+.book:hover{
+  background-color: bisque;
+}
+
+.capa{
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  min-width: 180px;
+  height: 280px;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-around;
+  background: url(http://placeimg.com/600/280/any) no-repeat center;
+  font-family: 'Mochiy Pop P One', sans-serif; 
+  border-radius: 5px;
+}
+.title{
+  text-align: center;
+  font-size: 24px;
+  color: rgb(197, 194, 190);
+  max-height: 100px;
+  text-overflow: hidden;
+  flex-grow: 1;
+}
+.author{
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.published{
+  text-align: center;
+  font-size: 12px;
+}
+.genre{
+  font-size: 14px;
+  text-align: center;
+
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  color: #585858;
+}
+.description .title{
+  font-size: 24px;
+  font-family: Exo,sans-serif;
+  color: #a6388c;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.description .author{
+  font-family: Open Sans,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.description h3{
+  font-size: 18px;
+  font-family: Exo,sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.description p{
+  font-family: Open Sans,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.description b{
+  font-size: 16px;
+  font-family: Exo,sans-serif;
+  color: #a6388c;
+}
+.description span{
+  align-self: flex-end;
+  margin-bottom: 8px;
+}
+
+@media(max-width : 640px){ 
+  .book{
+    flex-direction: column;
+    align-items: center;
+  }
+  .capa{
+    width: 90%;
+    border-radius: 5px;
+  }
+}
